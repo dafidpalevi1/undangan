@@ -28,12 +28,7 @@ $(document).ready(function() {
     $('#submit').css('cursor','pointer');
 
     $(document).on('click', '#submit', function (event) {
-        event.preventDefault();
-        var kehadiran;
-        if ($("#hadir").prop("checked")) kehadiran = "hadir";
-        if ($("#mungkin-hadir").prop("checked")) kehadiran = "mungkin-hadir";
-        if ($("#tidak-hadir").prop("checked")) kehadiran = "tidak-hadir";
-
+        
         var nama = $("#nama").val();
         var lokasi = $("#lokasi").val();
         var ucapan = $("#ucapan").val();
